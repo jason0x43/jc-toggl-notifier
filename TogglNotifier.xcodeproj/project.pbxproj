@@ -7,6 +7,14 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		9618952017DB9C2A00096C06 /* Connections.m in Sources */ = {isa = PBXBuildFile; fileRef = 9618951F17DB9C2A00096C06 /* Connections.m */; };
+		962E496A17DABA5F00EA366E /* Commands.m in Sources */ = {isa = PBXBuildFile; fileRef = 962E496917DABA5F00EA366E /* Commands.m */; };
+		96A9FA0317DAF3660031D572 /* toggl_error.png in Resources */ = {isa = PBXBuildFile; fileRef = 96A9FA0217DAF3660031D572 /* toggl_error.png */; };
+		96C2C2D417DAA24D004E3232 /* TogglNotifier.sdef in Resources */ = {isa = PBXBuildFile; fileRef = 96C2C2D317DAA24D004E3232 /* TogglNotifier.sdef */; };
+		96CC9F2217DA0940001E90C0 /* toggl_active.png in Resources */ = {isa = PBXBuildFile; fileRef = 96CC9F1E17DA0940001E90C0 /* toggl_active.png */; };
+		96CC9F2317DA0940001E90C0 /* toggl_default.png in Resources */ = {isa = PBXBuildFile; fileRef = 96CC9F1F17DA0940001E90C0 /* toggl_default.png */; };
+		96CC9F2517DA0940001E90C0 /* toggl_selected.png in Resources */ = {isa = PBXBuildFile; fileRef = 96CC9F2117DA0940001E90C0 /* toggl_selected.png */; };
+		96CC9F2917DA0C16001E90C0 /* icon.icns in Resources */ = {isa = PBXBuildFile; fileRef = 96CC9F2817DA0C16001E90C0 /* icon.icns */; };
 		96FCFEB017D939790063805B /* Cocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 96FCFEAF17D939790063805B /* Cocoa.framework */; };
 		96FCFEBA17D939790063805B /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 96FCFEB817D939790063805B /* InfoPlist.strings */; };
 		96FCFEBC17D939790063805B /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 96FCFEBB17D939790063805B /* main.m */; };
@@ -16,6 +24,16 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		9618951E17DB9C2A00096C06 /* Connections.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Connections.h; sourceTree = "<group>"; };
+		9618951F17DB9C2A00096C06 /* Connections.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Connections.m; sourceTree = "<group>"; };
+		962E496817DABA5F00EA366E /* Commands.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Commands.h; sourceTree = "<group>"; };
+		962E496917DABA5F00EA366E /* Commands.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Commands.m; sourceTree = "<group>"; };
+		96A9FA0217DAF3660031D572 /* toggl_error.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = toggl_error.png; sourceTree = "<group>"; };
+		96C2C2D317DAA24D004E3232 /* TogglNotifier.sdef */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = TogglNotifier.sdef; sourceTree = "<group>"; };
+		96CC9F1E17DA0940001E90C0 /* toggl_active.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = toggl_active.png; sourceTree = "<group>"; };
+		96CC9F1F17DA0940001E90C0 /* toggl_default.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = toggl_default.png; sourceTree = "<group>"; };
+		96CC9F2117DA0940001E90C0 /* toggl_selected.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = toggl_selected.png; sourceTree = "<group>"; };
+		96CC9F2817DA0C16001E90C0 /* icon.icns */ = {isa = PBXFileReference; lastKnownFileType = image.icns; path = icon.icns; sourceTree = "<group>"; };
 		96FCFEAC17D939790063805B /* TogglNotifier.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = TogglNotifier.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		96FCFEAF17D939790063805B /* Cocoa.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Cocoa.framework; path = System/Library/Frameworks/Cocoa.framework; sourceTree = SDKROOT; };
 		96FCFEB217D939790063805B /* AppKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AppKit.framework; path = System/Library/Frameworks/AppKit.framework; sourceTree = SDKROOT; };
@@ -46,9 +64,14 @@
 		96FCFEA317D939790063805B = {
 			isa = PBXGroup;
 			children = (
+				96CC9F2817DA0C16001E90C0 /* icon.icns */,
 				96FCFEB517D939790063805B /* TogglNotifier */,
 				96FCFEAE17D939790063805B /* Frameworks */,
 				96FCFEAD17D939790063805B /* Products */,
+				96CC9F1E17DA0940001E90C0 /* toggl_active.png */,
+				96CC9F1F17DA0940001E90C0 /* toggl_default.png */,
+				96CC9F2117DA0940001E90C0 /* toggl_selected.png */,
+				96A9FA0217DAF3660031D572 /* toggl_error.png */,
 			);
 			sourceTree = "<group>";
 		};
@@ -84,8 +107,13 @@
 			children = (
 				96FCFEC117D939790063805B /* TNAppDelegate.h */,
 				96FCFEC217D939790063805B /* TNAppDelegate.m */,
+				96C2C2D317DAA24D004E3232 /* TogglNotifier.sdef */,
 				96FCFEC417D939790063805B /* MainMenu.xib */,
+				962E496817DABA5F00EA366E /* Commands.h */,
+				962E496917DABA5F00EA366E /* Commands.m */,
 				96FCFEB617D939790063805B /* Supporting Files */,
+				9618951E17DB9C2A00096C06 /* Connections.h */,
+				9618951F17DB9C2A00096C06 /* Connections.m */,
 			);
 			path = TogglNotifier;
 			sourceTree = "<group>";
@@ -157,6 +185,12 @@
 				96FCFEBA17D939790063805B /* InfoPlist.strings in Resources */,
 				96FCFEC017D939790063805B /* Credits.rtf in Resources */,
 				96FCFEC617D939790063805B /* MainMenu.xib in Resources */,
+				96CC9F2217DA0940001E90C0 /* toggl_active.png in Resources */,
+				96CC9F2317DA0940001E90C0 /* toggl_default.png in Resources */,
+				96CC9F2517DA0940001E90C0 /* toggl_selected.png in Resources */,
+				96CC9F2917DA0C16001E90C0 /* icon.icns in Resources */,
+				96C2C2D417DAA24D004E3232 /* TogglNotifier.sdef in Resources */,
+				96A9FA0317DAF3660031D572 /* toggl_error.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -169,6 +203,8 @@
 			files = (
 				96FCFEBC17D939790063805B /* main.m in Sources */,
 				96FCFEC317D939790063805B /* TNAppDelegate.m in Sources */,
+				962E496A17DABA5F00EA366E /* Commands.m in Sources */,
+				9618952017DB9C2A00096C06 /* Connections.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -257,6 +293,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
 				MACOSX_DEPLOYMENT_TARGET = 10.8;
+				ONLY_ACTIVE_ARCH = NO;
 				SDKROOT = macosx;
 			};
 			name = Release;
@@ -304,6 +341,7 @@
 				96FCFECB17D939790063805B /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

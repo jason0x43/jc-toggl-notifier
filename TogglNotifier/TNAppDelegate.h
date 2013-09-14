@@ -10,6 +10,12 @@
 
 @interface TNAppDelegate : NSObject <NSApplicationDelegate>
 
-@property (assign) IBOutlet NSWindow *window;
+@property (nonatomic, setter=setStatus:) NSString *status;
+
+- (void)refresh;
+- (void)setActive:(NSString *)title;
+- (void)setStopped;
+- (void)setError:(NSString *)message;
+- (void)setApiKey:(NSString *)key;
 
 @end

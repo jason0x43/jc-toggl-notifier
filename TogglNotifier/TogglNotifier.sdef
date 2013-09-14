@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE dictionary SYSTEM "file://localhost/System/Library/DTDs/sdef.dtd">
+<dictionary title="TogglNotifier Terminology">
+    <suite name="TogglNotifier" code="TNot"
+        description="TogglNotifier scripting facilities.">
+        
+        <command name="refresh" code="TNotrfrs" description="Check for timers">
+            <cocoa class="TNRefreshCommand"/>
+        </command>
+
+        <command name="set active timer to" code="TNotactv"
+            description="Set the active timer title">
+            <cocoa class="TNSetActiveCommand"/>
+            <direct-parameter description="the title of the active timer">
+                <type type="text"/>
+            </direct-parameter>
+        </command>
+        
+        <command name="be stopped" code="TNotstop"
+            description="Set the notifier to the stopped state">
+            <cocoa class="TNSetStoppedCommand"/>
+        </command>
+        
+        <command name="set error message to" code="TNoterro"
+            description="Set an error message">
+            <cocoa class="TNSetErrorCommand"/>
+            <direct-parameter description="an error message">
+                <type type="text"/>
+            </direct-parameter>
+        </command>
+        
+        <command name="set api key to" code="TNotapik"
+            description="Set the Toggl API key">
+            <cocoa class="TNSetApiKeyCommand"/>
+            <direct-parameter description="the API key">
+                <type type="text"/>
+            </direct-parameter>
+        </command>
+    </suite>
+</dictionary>
